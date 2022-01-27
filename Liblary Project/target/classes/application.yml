@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: bigliblaryproject
+
+  data:
+    cassandra:
+      keyspace-name: main
+      username: MXKlIgytvImZfCUJTzmJZcQZ
+      password: TZw3WI1fywOzQcki8WbT_l5yMzbhXt4klXxBhYD4GLIQcE9_SjZu_sm2YDHZ,v-7gRJIg+MnUK1A4.95Z9eisSZRcp6xtKkkAOJ5qKo.rnYD,kJLu2QCT2_OTnLA39Gn
+      request:
+        timeout: 10s
+      connection:
+        connect-timeout: 10s
+        init-query-timeout: 10s
+      schema-action: create_if_not_exists
+
+datastax.astra:
+  secure-connect-bundle: src/main/resources/secure-connect.zip
+
+astra.db:
+  id: 04574ff0-8c1e-486d-a4ec-ecde5facccc7
+  region: us-west1
+  keyspace: main
+  application.token: AstraCS:MXKlIgytvImZfCUJTzmJZcQZ:f5c81e18c26cca9aa41e863bce7bf0cf608b5dfc991a71f2157fe31be479c31d
+
